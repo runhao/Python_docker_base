@@ -19,6 +19,7 @@ RUN apt-get clean \
 
 # 下载相关
 RUN apt-get install -y vim \
+&& apt-get install lsof \
 && apt-get install -y nginx=1.22.1-9
 
 # 启动nginx服务
